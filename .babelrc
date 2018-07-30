@@ -1,0 +1,12 @@
+{
+  "presets": ["flow", "env"],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "test": "./test",
+        "underscore": "lodash"
+      }
+    }]
+  ]
+}

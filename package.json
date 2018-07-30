@@ -1,0 +1,22 @@
+{
+  "name": "nodedown",
+  "version": "1.0.0",
+  "description": "The next-gen markdown builder for node",
+  "main": "lib/index.js",
+  "repository": "https://github.com/flxwu/nodedown",
+  "author": "Felix Wu",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.77.0",
+    "jest": "^23.4.2"
+  },
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "prepublish": "yarn run build",
+    "test": "jest"
+  }
+}
