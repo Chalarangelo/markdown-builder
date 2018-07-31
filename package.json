@@ -18,5 +18,23 @@
     "build": "babel src/ -d lib/",
     "prepublish": "yarn run build",
     "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "globals": {
+      "NODE_ENV": "test"
+    },
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src/components",
+      "src/util"
+    ]
   }
 }
