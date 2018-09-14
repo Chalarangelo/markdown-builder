@@ -17,6 +17,7 @@ const collapsible = (summary: string, content: string) =>
   `
 <details>
   <summary>${summary}</summary>
+  
   ${content}
 </details>
 ` +
