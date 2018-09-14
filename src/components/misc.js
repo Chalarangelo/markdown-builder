@@ -23,7 +23,7 @@ const collapsible = (summary: string, content: string) =>
   LINE_BREAK;
 
 const anchor = (val: string) =>
-  val
+  '#' + val
     .trim()
     .toLowerCase()
     .replace(/[^\w\- ]+/g, '')
