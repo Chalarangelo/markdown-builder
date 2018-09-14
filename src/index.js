@@ -1,5 +1,3 @@
-import * as nodedown from './components';
+import * as markdown from './components';
 
-export default {
-  nodedown,
-};
+module.exports = markdown;

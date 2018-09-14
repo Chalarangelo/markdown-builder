@@ -22,4 +22,4 @@ const h4 = (text: string): string => hX(4, text);
 const h5 = (text: string): string => hX(5, text);
 const h6 = (text: string): string => hX(6, text);
 
-export { hX as default, h1, h2, h3, h4, h5, h6 };
+export { hX, h1, h2, h3, h4, h5, h6 };

@@ -3,7 +3,7 @@ import * as Emphasis from './emphasis';
 import * as Lists from './lists';
 import * as Misc from './misc';
 
-export default {
+module.exports = {
   Headers,
   Emphasis,
   Lists,
