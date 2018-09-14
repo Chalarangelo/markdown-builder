@@ -44,7 +44,7 @@ emphasis.i('italic text')
 emphasis.s('strikethrough text')
 ```
 
-## Lists
+### Lists
 ```js
 const markdown = require('markdown-builder')
 const { lists } = markdown
@@ -63,7 +63,7 @@ lists.ul(a)
 lists.ul(a, (item) => item.toUpperCase())
 ```
 
-## Miscellaneous
+### Miscellaneous
 
 ```js
 const markdown = require('markdown-builder')
@@ -78,10 +78,14 @@ misc.image(alt, url, title)
 misc.collapsible('Summary', 'content');
 
 // Github Anchor
-misc.anchor('A header with /*() special-characters and an image! ![Image](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)');
+misc.anchor('A header with /*() special-characters!');
+
+// Link
+misc.link('Github', 'https://github.com/flxwu')
 
 // horizontal rule
 misc.hr()
+
 ```
 
 **Collapsible**:
@@ -93,4 +97,4 @@ misc.hr()
 
 
 
-#### A header with /*() special-characters and an image! ![Image](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)
+#### A header with /*() special-characters!
