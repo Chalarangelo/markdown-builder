@@ -1,9 +1,9 @@
 {
-  "name": "nodedown",
+  "name": "md-builder",
   "version": "0.7.1",
   "description": "The next-gen markdown builder for node",
   "main": "lib/index.js",
-  "repository": "https://github.com/flxwu/nodedown",
+  "repository": "https://github.com/flxwu/md-builder",
   "author": "Felix Wu",
   "license": "MIT",
   "devDependencies": {
