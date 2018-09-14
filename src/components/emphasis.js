@@ -10,10 +10,22 @@ import {
   EMPHASIS_STRIKETHROUGH,
 } from '../util/constants';
 
-const italic = (text: string) => surround(EMPHASIS_ITALICS, text);
+/**
+ * Produces italic text
+ * @param {string} text 
+ */
+const i = (text: string): string => surround(EMPHASIS_ITALICS, text);
 
-const bold = (text: string) => surround(EMPHASIS_BOLD, text);
+/**
+ * Produces bold text
+ * @param {string} text 
+ */
+const b = (text: string): string => surround(EMPHASIS_BOLD, text);
 
-const strikethrough = (text: string) => surround(EMPHASIS_STRIKETHROUGH, text);
+/**
+ * Produces strikethroughed text
+ * @param {string} text 
+ */
+const s = (text: string): string => surround(EMPHASIS_STRIKETHROUGH, text);
 
-export { italic, bold, strikethrough };
+export { i, b, s };
