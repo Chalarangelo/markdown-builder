@@ -17,7 +17,7 @@
   "scripts": {
     "build": "babel src/ -d lib/",
     "test": "jest",
-    "flow": "flow-bin check"
+    "flow": "flow check"
   },
   "jest": {
     "verbose": true,

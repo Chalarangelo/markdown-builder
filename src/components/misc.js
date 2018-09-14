@@ -22,7 +22,7 @@ const collapsible = (summary: string, content: string) =>
 ` +
   LINE_BREAK;
 
-const anchor = val =>
+const anchor = (val: string) =>
   val
     .trim()
     .toLowerCase()
@@ -30,7 +30,7 @@ const anchor = val =>
     .replace(/\s/g, '-')
     .replace(/\-+$/, '');
 
-const link = (title: string, url: string = null) => {
+const link = (title: string, url: string|null = null) => {
   if (url === null) {
     url = anchor(title);
   }
