@@ -16,7 +16,6 @@
   },
   "scripts": {
     "build": "babel src/ -d lib/",
-    "prepublish": "yarn run build",
     "test": "jest",
     "flow": "flow-bin check"
   },
@@ -37,5 +36,13 @@
       "src/components",
       "src/util"
     ]
+  },
+  "dependencies": {
+    "husky": "^1.0.0-rc.14"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn flow && yarn test"
+    }
   }
 }
