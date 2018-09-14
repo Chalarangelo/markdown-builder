@@ -39,7 +39,7 @@ const link = (title: string, url: string|null = null) => {
 };
 
 const image = (alt:string, url:string, title: string = '') =>
-  `![${alt}](${url} "${title}")`
+  `![${alt}](${url} ${title !== '' ? `"${title}"` : ''})`
 
 export {
   hr,
