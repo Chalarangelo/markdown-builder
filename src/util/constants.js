@@ -12,7 +12,7 @@ const EMPHASIS_STRIKETHROUGH = '~~';
 const UNORDERED_LIST_PREFIX = '*';
 
 const LINE_BREAK = '  ';
-const SECTION_LINE_BREAK = LINE_BREAK + '\n';
+const SECTION_LINE_BREAK = '\n';
 
 const HORIZONTAL_RULE = '---';
 
