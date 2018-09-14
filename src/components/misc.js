@@ -7,7 +7,6 @@ import {
   HORIZONTAL_RULE,
   SECTION_LINE_BREAK,
   surround,
-  LINE_BREAK
 } from '../util';
 
 const hr = () => surround(SECTION_LINE_BREAK, HORIZONTAL_RULE);
