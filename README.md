@@ -78,7 +78,7 @@ misc.image(alt, url, title)
 misc.collapsible('Summary', 'content');
 
 // Github Anchor
-misc.anchor('A header with /*() special-characters!');
+misc.anchor('A header with /*() special-characters!'); // #a-header-with--special-characters
 
 // Link
 misc.link('Github', 'https://github.com/flxwu')
