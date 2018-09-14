@@ -29,7 +29,7 @@ Trace:
 npm manifest: 
   {
     "name": "markdown-builder",
-    "version": "0.7.6",
+    "version": "0.8.4-hotfix",
     "description": "The next-gen markdown builder for node",
     "main": "lib/index.js",
     "repository": "https://github.com/flxwu/markdown-builder",
