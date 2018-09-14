@@ -16,9 +16,9 @@ const collapsible = (summary: string, content: string) =>
   SECTION_LINE_BREAK +
   `
 <details>
-  <summary>${summary}</summary>
-  
-  ${content}
+<summary>${summary}</summary>
+
+${content}
 </details>
 ` +
   LINE_BREAK;
