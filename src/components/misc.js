@@ -37,9 +37,13 @@ const link = (title: string, url: string|null = null) => {
   return `[${title}](${url})`;
 };
 
+const image = (alt:string, url:string, title: string|null = null) =>
+  `![${alt}](${url} ${title && `"${title}"`})`
+
 export {
   hr,
   collapsible,
   anchor,
-  link
+  link,
+  image
 };
