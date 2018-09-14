@@ -1,11 +1,11 @@
-import * as Headers from './headers';
-import * as Emphasis from './emphasis';
-import * as Lists from './lists';
-import * as Misc from './misc';
+import * as headers from './headers';
+import * as emphasis from './emphasis';
+import * as lists from './lists';
+import * as misc from './misc';
 
 module.exports = {
-  Headers,
-  Emphasis,
-  Lists,
-  Misc
+  headers,
+  emphasis,
+  lists,
+  misc
 };
