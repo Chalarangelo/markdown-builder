@@ -1,6 +1,6 @@
 {
   "name": "markdown-builder",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "description": "The next-gen markdown builder for node",
   "main": "lib/index.js",
   "repository": "https://github.com/flxwu/markdown-builder",
