@@ -20,8 +20,7 @@ const collapsible = (summary: string, content: string) =>
 
 ${content}
 </details>
-` +
-  LINE_BREAK;
+`;
 
 const anchor = (val: string) =>
   '#' + val
