@@ -24,7 +24,7 @@ const anchor = (val: string) => {
 
   if (typeof val !== 'string') return '';
   const anchor = val.replace(/[A-Z]+/g, str => str.toLowerCase());
-  return '# ' + anchor
+  return '#' + anchor
     .trim()
     .replace(re, '')
     .replace(whitespace, replacement);
