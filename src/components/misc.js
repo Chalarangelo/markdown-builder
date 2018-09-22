@@ -3,11 +3,7 @@
  * @flow
  */
 
-import {
-  HORIZONTAL_RULE,
-  SECTION_LINE_BREAK,
-  surround,
-} from '../util';
+import { HORIZONTAL_RULE, SECTION_LINE_BREAK, surround } from '../util';
 
 const hr = () => surround(SECTION_LINE_BREAK, HORIZONTAL_RULE);
 
@@ -21,28 +17,27 @@ ${content}
 </details>
 `;
 
-const anchor = (val: string) =>
-  '#' + val
-    .trim()
-    .toLowerCase()
-    .replace(/[^\w\- ]+/g, '')
-    .replace(/\s/g, '-')
-    .replace(/\-+$/, '');
+const anchor = (val: string) => {
+  const re = /[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,./:;<=>?@[\]^`{|}~]/g;
+  const replacement = '-';
+  const whitespace = /\s/g;
 
-const link = (title: string, url: string|null = null) => {
+  if (typeof val !== 'string') return '';
+  const anchor = val.replace(/[A-Z]+/g, str => str.toLowerCase());
+  return anchor
+    .trim()
+    .replace(re, '')
+    .replace(whitespace, replacement);
+};
+
+const link = (title: string, url: string | null = null) => {
   if (url === null) {
     url = anchor(title);
   }
   return `[${title}](${url})`;
 };
 
-const image = (alt:string, url:string, title: string = '') =>
-  `![${alt}](${url}${title !== '' ? ` "${title}"` : ''})`
+const image = (alt: string, url: string, title: string = '') =>
+  `![${alt}](${url}${title !== '' ? ` "${title}"` : ''})`;
 
-export {
-  hr,
-  collapsible,
-  anchor,
-  link,
-  image
-};
+export { hr, collapsible, anchor, link, image };
