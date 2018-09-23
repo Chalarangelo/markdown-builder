@@ -14,6 +14,15 @@
     "flow-bin": "^0.77.0",
     "jest": "^23.4.2"
   },
+  "keywords": [
+    "markdown",
+    "builder",
+    "generator",
+    "package",
+    "node",
+    "md",
+    "parser"
+  ],
   "scripts": {
     "build": "babel src/ -d lib/",
     "test": "jest",
