@@ -3,6 +3,8 @@
 ![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/markdown-builder.svg)
 ![npm](https://img.shields.io/npm/v/markdown-builder.svg)
 
+> Official README builder for the 30-seconds projects.
+
 ## Usage
 ```bash
 npm install --save markdown-builder
