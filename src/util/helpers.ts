@@ -1,6 +1,5 @@
 /**
  * Utility functions & helpers
- * @flow
  */
 
 const withPrefix = (prefix: string, text: string) => prefix + ' ' + text;

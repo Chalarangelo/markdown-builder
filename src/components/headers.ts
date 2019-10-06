@@ -1,19 +1,20 @@
 /**
  * Markdown Header utilities
- * @flow
  */
 
 import { HEADER_PREFIX, withPrefix, SECTION_LINE_BREAK } from '../util';
 
 /**
  * Header of specific level
- * @param {number} headerLevel 
- * @param {string} text 
+ * @param {number} headerLevel
+ * @param {string} text
  */
 const hX = (headerLevel: number, text: string): string =>
-  headerLevel > 6
-    ? h6(text)
-    : SECTION_LINE_BREAK + withPrefix(HEADER_PREFIX.repeat(headerLevel), text) + SECTION_LINE_BREAK;
+	headerLevel > 6
+		? h6(text)
+		: SECTION_LINE_BREAK +
+		  withPrefix(HEADER_PREFIX.repeat(headerLevel), text) +
+		  SECTION_LINE_BREAK;
 
 const h1 = (text: string): string => hX(1, text);
 const h2 = (text: string): string => hX(2, text);
