@@ -1,5 +1,5 @@
 {
-  "presets": ["flow", "env"],
+  "presets": ["@babel/preset-typescript", "@babel/env"],
   "plugins": [
     ["module-resolver", {
       "root": ["./src"],
